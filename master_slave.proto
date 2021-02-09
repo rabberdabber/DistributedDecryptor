@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package master_slave;
+
+
+service TranslateKeyWords {
+    rpc Translate (Request) returns (Response) {}
+    rpc TryKey (Request) returns (Response) {}
+}
+
+message Request {
+    string req = 1;
+}
+
+message Response {
+    string res = 1;
+}
+
+

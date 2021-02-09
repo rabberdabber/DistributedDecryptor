@@ -1,0 +1,17 @@
+syntax = "proto3";
+
+package peer;
+
+service RequestBuddy {
+    rpc PeerGetKey (Request) returns (Response) {}
+    rpc NodeGetKey (Request) returns (Response) {}
+}
+
+message Request {
+    string req = 1;
+    bool file_req = 2;
+}
+
+message Response {
+    string res = 1;
+}

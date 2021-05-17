@@ -20,6 +20,7 @@ I implemented supernodes as an asynchronous multi-threaded(5 threads) server whi
 
 # Requirements for testing the code
 - This project requires real databases with key as source and values as translation
+- use cmake 
 
 # how to run the client 
 ./client [input_file] [ip] [port]
